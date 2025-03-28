@@ -44,20 +44,20 @@
     <!-- LOGO -->
     <a href="#" class="logo">
       <img class="logo__img" src="./img/codffee-logo.jpg" alt="logo de Codffee" />
-      <span class="logo__text">Codffee.fr</span>
+      <span class="logo__text"><h1>Codffee.fr</h1></span>
     </a>
 
     <!--First BTN-CTA -->
     <nav>
       <ul>
         <li>
-          <a class="btn__cta" onclick="toggle()" href="#">Prévenez-moi</a>
+          <button class="btn__cta" onclick="toggle()">Prévenez-moi</button>
         </li>
       </ul>
     </nav>
   </header>
 
-  <!-- MAIN SECTION -->
+<main>  <!-- MAIN SECTION -->
   <section>
     <!-- WAVE SVG -->
 
@@ -98,7 +98,7 @@
           <span>Secondes</span>
         </div>
       </div>
-      <a class="btn-cta" onclick="toggle()" href="#">Prévenez-moi</a>
+      <button class="btn-cta" onclick="toggle()" href="#">Prévenez-moi</button>
     </div>
 
     <!-- Image du coffee shop -->
@@ -108,7 +108,7 @@
   </section>
 
   <!-- NEWSLETTER -->
-  <div class="newsletter">
+  <section class="newsletter">
     <div class="newsletter__title">
       <h2>Restez connectés</h2>
       <p>Soyez informé du lancement</p>
@@ -116,7 +116,7 @@
     <!-- Formulaire d'abonnement à la newsletter -->
     <div class="newsletter__form">
       <form action="">
-        <input type="email" name="" placeholder="*votre@email.com" />
+        <input type="email" name="" placeholder="*votre@email.com" required/>
         <input type="submit" value="M'abonner" />
       </form>
     </div>
@@ -134,8 +134,11 @@
       </p>
     </div>
     <!-- Image fermeture formulaire -->
-    <img class="close" onclick="toggle()" src="./img/section/close.png" alt="image pour fermer le formulaire" />
-  </div>
+<button>    
+  <img class="close" onclick="toggle()" src="./img/section/close.png" alt="image pour fermer le formulaire" />
+</button>
+  </section>
+</main>
 
   <!-- FOOTER -->
   <footer>
