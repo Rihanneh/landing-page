@@ -29,7 +29,7 @@
   <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
   <!-- favicon -->
-  <link rel="shortcut icon" href="./img/favicon/codffee-logo.jpg" type="image/x-icon" />
+  <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
 
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
@@ -43,7 +43,7 @@
 
     <!-- LOGO -->
     <a href="#" class="logo">
-      <img class="logo__img" src="./img/codffee-logo.jpg" alt="logo de Codffee" />
+      <img class="logo__img" src="./img/logo/codffee-logo.webp" alt="logo de Codffee" width="60" height="60" loading="eager"/>
       <span class="logo__text">
         <h1>Codffee.fr</h1>
       </span>
@@ -103,14 +103,16 @@
         <button class="btn-cta" onclick="toggle()" href="#">Prévenez-moi</button>
       </div>
 
-      <!-- Image du coffee shop -->
+      <!-- Image de la tasse -->
       <div class="img-box">
-        <img src="./img/codffee-logo.svg" alt="les developpeurs dans un café" />
+        <img src="./img/codffee-logo.svg" alt="les developpeurs dans un café" loading="lazy" decoding="async"
+        sizes="(max-width: 768px) 300px, (max-width: 1200px) 1200px, 1200px"
+        srcset="./img/codffee-logo.svg"/>
       </div>
     </section>
 
     <!-- NEWSLETTER -->
-    <section id="newsletter" class="newsletter active">
+    <section id="newsletter" class="newsletter">
       <div class="newsletter__title">
         <h2>Restez connectés</h2>
         <p>Soyez informé du lancement</p>
