@@ -5,26 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image d'arrière-plan CSS d'éco-conçue</title>
-
     <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
         .hero-banner {
             width: 100%;
-        height: 50vh;
-    background-color: #3a7d6d;
-/*Couleur de fon similaire à l'image*/ 
-/* background-image: url('banner-small.webp'); */
-background-image: url('https://placehold.co/800x400/webp?text=Panda+Sympa');
-background-size: cover;
-background-position: center;
-}
-
-/* Utiliser une image plus grande uniquemetn sur les grands écran  */
-@media (min-width: 1200px)  {
-    .hero-banner {
-        background-image: url('banner-large.webp');
-        background-image: url('https://placehold.co/1080x400/webp?text=Panda+Sympa');
-    }
-}
+            height: 50vh;
+            background-color: #3a7d6d;
+            /* Couleur de fond similaire à l'image */
+            background-image: url('./img/hero-banner-small.jpeg.webp');
+            /* background-image: url('https://placehold.co/600x400/webp?text=Panda+Sympa'); */
+            background-size: cover;
+            background-position: center;
+        }
+        /* Utiliser une image plus grande uniquemet sur les grands écrans */
+        @media (min-width: 1200px) {
+            .hero-banner {
+                background-image: url('./img/hero-banner-large.jpeg.webp');
+                /* background-image: url('https://placehold.co/1080x400/webp?text=Panda+Sympa'); */
+            }
+        }
     </style>
 </head>
 
