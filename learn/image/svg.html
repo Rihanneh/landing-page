@@ -61,12 +61,12 @@
 
 <!-- une ellipse -->
  
-<hr>
+<!-- <hr>
 <h2>SVG Ellipse</h2>
 <svg xmnls="http://www.w3.org/2000/svg" width="200" height="200" style="border: 1px solid #ccc;">
-    <ellipse id="ell1" cx="100" cy="100" rx="98" ry="98" fill="#FF11" stroke="black"></ellipse>
-    <ellipse id="ell2" cx="100" cy="100" rx="98" ry="88" fill="#FF11" stroke="black"></ellipse>
-    <ellipse id="ell3" cx="100" cy="100" rx="98" ry="78" fill="#FF11" stroke="black"></ellipse>
+    <ellipse id="ell1" cx="100" cy="100" rx="98" ry="98" fill="#FF11" stroke="gray" fill-rule="evenodd"></ellipse>
+    <ellipse id="ell2" cx="100" cy="100" rx="98" ry="88" fill="#FF11" stroke="gray"></ellipse>
+    <ellipse id="ell3" cx="100" cy="100" rx="98" ry="78" fill="#FF11" stroke="gray"></ellipse>
     <ellipse id="ell4" cx="100" cy="100" rx="98" ry="68" fill="#FF11" stroke="black"></ellipse>
     <ellipse id="ell5" cx="100" cy="100" rx="98" ry="58" fill="#FF11" stroke="black"></ellipse>
     <ellipse id="ell6" cx="100" cy="100" rx="98" ry="48" fill="#FF11" stroke="black"></ellipse>
@@ -88,22 +88,26 @@
     <ellipse cx="100" cy="100" rx="20" ry="100" fill="rgba(113,75,74,0.12)" stroke="white"></ellipse>
     <ellipse cx="100" cy="100" rx="10" ry="100" fill="rgba(113,75,74,0.12)" stroke="white"></ellipse>
     <ellipse cx="100" cy="100" rx="1" ry="100" fill="rgba(113,75,74,0.12)" stroke="white"></ellipse>
-</svg>
+</svg> -->
 
 <!-- un texte -->
 
-<hr>
+<!-- <hr>
 <h2>SVG Texte</h2>
 <svg xmnls="http://www.w3.org/2000/svg" style="border: 1px solid #ccc;">
     <text x="10" y="20" >This is me !</text>
 </svg>
 <svg xmnls="http://www.w3.org/2000/svg" style="border: 1px solid #ccc;">
     <text x="100" y="120" font-size="20px" fill="red">This is me !</text>
-</svg>
+</svg> -->
 
-<!-- un texte -->
+<!-- des Polygones -->
+
+<!-- un trapèze -->
 
 <hr>
+<h2> SVG Polygones
+</h2>
 <svg xmnls="http://www.w3.otg/2000/svg" style="border: 1px #ccc solid;">
     <polygon 
     points="60, 20, 240, 20, 280, 120, 20, 120"
@@ -111,6 +115,28 @@
     stroke="black"></polygon>
     <text x="60" y="75" fill="white" font-size="20px"> This is a svg trapezium</text>
 </svg>
+
+<!-- un pentagone -->
+<svg xmnls="http://www.w3.org/2000/svg" style="border: 1px solid #ccc;">
+    <polygon points="150, 20 200,60 180,110 120,110 100, 60" fill="teal" stroke="black"></polygon>
+   <!-- étoile -->
+     <polygon points="150, 20 180,110 100, 60 200,60 120,110" fill="blue" fill-rule="evenodd" stroke="yellow"></polygon>
+
+    <text x="70" y="130" font-size="18px">This is a SVF Pentagon</text>
+</svg>
+
+<!-- une étoile -->
+<svg xmnls="http://www.w3.org/2000/svg" style="border: 1px solid #ccc;">
+    <polygon points="150, 25 180,110 100, 60 200,60 120,110" fill="blue" stroke="black"></polygon>
+    <text x="85" y="130" font-size="18px">This is a SVF star</text>
+</svg>
+
+<!-- une étoile avec l'attribut fill-rule -->
+<svg xmnls="http://www.w3.org/2000/svg" style="border: 1px solid #ccc;">
+    <polygon points="150, 25 180,110 100, 60 200,60 120,110" fill="yellow" fill-rule="evenodd" stroke="black"></polygon>
+    <text x="5" y="130" font-size="18px">This is a SVF star with fill-rule evenodd</text>
+</svg>
+
 
 
 </body>
