@@ -2,37 +2,41 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Security Meta Tags -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self';font-src 'self'">
+
   <!-- HTML Meta Tags -->
   <title>Codffee | Development Web</title>
   <meta name="description" content="Codffee est un site pour les passionnés du coding, pour s'entrainer entre les codeurs et se détendre en prenant un café partageant les expériences et idées de ouf, à l'ombre du monde exigeant.
-" />
+">
 
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https:/Codffee.fr" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content=" Codffee | Development Web" />
+  <meta property="og:url" content="https:/Codffee.fr">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content=" Codffee | Development Web">
   <meta property="og:description" content="Codffee est un site pour les passionnés du coding, pour s'entrainer entre les codeurs et se détendre en prenant un café partageant les expériences et idées de ouf, à l'ombre du monde exigeant.
-" />
-  <meta property="og:image" content="./img/cool-coding.webp>" />
+">
+  <meta property="og:image" content="./img/cool-coding.webp>">
 
   <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta property="twitter:domain" content="Codffee.fr" />
-  <meta property="twitter:url" content="https:/Codffee.fr" />
-  <meta name="twitter:title" content=" Codffee | Development Web" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="Codffee.fr">
+  <meta property="twitter:url" content="https:/Codffee.fr">
+  <meta name="twitter:title" content=" Codffee | Development Web">
   <meta name="twitter:description" content="Codffee est un site pour les passionnés du coding, pour s'entrainer entre les codeurs et se détendre en prennant un café partageant les expériences et les idées dans une ambiance zen et cosy.
-" />
-  <meta name="twitter:image" content="./img/cool-coding.webp>" />
+">
+  <meta name="twitter:image" content="./img/cool-coding.webp>">
 
   <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
   <!-- favicon -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
+  <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
 
   <!-- css -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -94,13 +98,21 @@
         <p class="vissually-hidden" aria-live="polite" id="count-down-description">
           Lancement prévu dans <span id="countdown-text"> x jours, x heures, x minutes et x secondes</span>
         </p>
+        
+        <!-- Deuxième bouton call-to-action -->
         <button class="btn-cta show__newsletter" aria-haspopup="dialog">Prévenez-moi</button>
       </div>
 
       <!-- Image de la tasse -->
       <div class="img-box">
-        <img src="./img/codffee-logo.svg" alt="une tasse de café" loading="lazy" decoding="async"
-          sizes="(max-width: 768px) 300px, (max-width: 1200px) 1200px, 1200px" srcset="./img/codffee-logo.svg" />
+        <img 
+        src="./img/codffee-logo.svg" 
+        width="1280" 
+        alt="une tasse de café" 
+        loading="lazy" 
+        decoding="async"
+        sizes="(max-width: 768px) 300px, (max-width: 1200px) 1200px, 1200px" 
+        srcset="./img/codffee-logo.svg 300w">
       </div>
     </section>
 
@@ -115,10 +127,10 @@
 
 
 
-        <form action="" method="post" aria-label="Formulaire d'inscription à la newsletter">
+        <form action="www.codffee.fr" method="post" aria-label="Formulaire d'inscription à la newsletter">
           <label for="email">Votre adresse email</label>
           <input type="email" id="email" name="email" placeholder="*votre@email.com" required aria-required="true"
-            autocomplete="email" />
+            autocomplete="email">
           <div class="consent-checkbox">
             <input type="checkbox" name="consent" id="consent" required aria-required="true">
             <label for="consent">J'accepte de recevoir la newsletter et j'ai lu la <a href="#"
@@ -179,8 +191,6 @@
     <div class="copy">
       Tous droits réservés &copy; <a href="#" target="_blank" rel="noopener" >Rey</a> | 2025-2026
     </div>
-
-
   </footer>
 
 
