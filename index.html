@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Security Meta Tags -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self';font-src 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self';font-src 'self' https://api.codffee/fr;" >
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="Referrer-Policy" content="no-referrer-when-downgrade">
 
   <!-- HTML Meta Tags -->
   <title>Codffee | Development Web</title>
@@ -14,21 +17,21 @@
 ">
 
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https:/Codffee.fr">
+  <meta property="og:url" content="https:www//Codffee.fr">
   <meta property="og:type" content="website">
   <meta property="og:title" content=" Codffee | Development Web">
   <meta property="og:description" content="Codffee est un site pour les passionnés du coding, pour s'entrainer entre les codeurs et se détendre en prenant un café partageant les expériences et idées de ouf, à l'ombre du monde exigeant.
 ">
-  <meta property="og:image" content="./img/cool-coding.webp>">
+  <meta property="og:image" content="https:www//Codffee.fr/img/cool-coding.webp>">
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="Codffee.fr">
-  <meta property="twitter:url" content="https:/Codffee.fr">
+  <meta property="twitter:url" content="https:www//Codffee.fr">
   <meta name="twitter:title" content=" Codffee | Development Web">
   <meta name="twitter:description" content="Codffee est un site pour les passionnés du coding, pour s'entrainer entre les codeurs et se détendre en prennant un café partageant les expériences et les idées dans une ambiance zen et cosy.
 ">
-  <meta name="twitter:image" content="./img/cool-coding.webp>">
+  <meta name="twitter:image" content="https:www//Codffee.fr/img/cool-coding.webp>">
 
   <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
@@ -122,18 +125,24 @@
         <h2 id="newsletter-title">Restez connectés</h2>
         <p>Soyez informé du lancement</p>
       </div>
+
       <!-- Formulaire d'abonnement à la newsletter -->
       <div class="newsletter__form">
 
 
 
-        <form action="www.codffee.fr" method="post" aria-label="Formulaire d'inscription à la newsletter">
+        <form action="https:www//Codffee.fr" method="POST" aria-label="Formulaire d'inscription à la newsletter">
+
+          <!-- Ajout du token CSRF (à générer côté serveur) -->
+          <input type="hidden" name="csrf-token" value="{{ csrf-token }}">
           <label for="email">Votre adresse email</label>
           <input type="email" id="email" name="email" placeholder="*votre@email.com" required aria-required="true"
-            autocomplete="email">
+            autocomplete="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+            title="Veuillez entrer une adresse email valide">
+            
           <div class="consent-checkbox">
             <input type="checkbox" name="consent" id="consent" required aria-required="true">
-            <label for="consent">J'accepte de recevoir la newsletter et j'ai lu la <a href="#"
+            <label for="consent">J'accepte de recevoir la newsletter et j'ai lu la <a href="https:www//Codffee.fr/politique-confidentialite"
                 class="policy-link">politique de confidentialité</a></label>
           </div>
           <button type="submit">M'abonner</button>
@@ -146,7 +155,7 @@
           En renseigant votre adresse email, vous acceptez de recevoir chaque
           semaine nos derniers articles de blog par courrier électronique et
           vous prenez connaissance de notre
-          <a href="#" class="policy-link">Politique de confidentialité</a>.
+          <a href="https:www//Codffee.fr/politique-confidentialite" class="policy-link">Politique de confidentialité</a>.
         </p>
         <p>
           Vous pouvez vous désinscrire à tout moment à l'aide des liens de
