@@ -1,0 +1,13 @@
+# robots.txt codffee.fr
+User-agent: *
+Allow: /
+Disallow: /assets/js/
+Disallow: /admin/
+Disallow: /private/
+
+# Empêcher les robots d"indexer des fichiers spécifiques
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Sitemap
+Sitemap: http://127.0.0.1:5500/sitemap.xml
