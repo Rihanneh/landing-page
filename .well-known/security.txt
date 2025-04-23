@@ -1,0 +1,6 @@
+Contact: mailto:secutiry@codffee.fr
+Expires: 2025-12-31T22:59:00.000Z
+Acknowledgments: https://codffee.fr/hall-of-fame.html
+Preferred-Languages: fr, en
+Canonical: https://codffee.fr/.well-known/security.txt
+Policy: https://codffee.fr/security-policy.html
