@@ -1,0 +1,11 @@
+/* TEAMS */
+Chef de projet: Rey
+Contact: contact@codffee.fr
+X/twitter: @wisepandafr
+From: Bretagne, France
+
+/* SITE */
+Last update: 2024/03/15
+Language: Français
+Doctype: Html5
+IDE: Visual Studio Code
